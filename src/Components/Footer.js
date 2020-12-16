@@ -1,45 +1,44 @@
-import React from "react";
-import { MDBCol, MDBContainer, MDBRow, MDBFooter } from "mdbreact";
+import React from 'react'
+import { Link } from 'react-router-dom'
 
-const FooterPage = () => {
-  return (
-    <MDBFooter color="gray" style={{background: "#ccc"}} className="font-small pt-4 mt-4">
-      <MDBContainer fluid className="text-center text-md-left">
-        <MDBRow>
-          <MDBCol md="6">
-            <h5 className="title">POPULAR CATEGORIES</h5>
-            <p>
-              Here you can use rows and columns here to organize your footer
-              content.
-            </p>
-          </MDBCol>
-          <MDBCol md="6">
-            <h5 className="title">Trending Searches</h5>
-            <ul>
-              <li className="list-unstyled">
-                <a href="#!">Link 1</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 2</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 3</a>
-              </li>
-              <li className="list-unstyled">
-                <a href="#!">Link 4</a>
-              </li>
-            </ul>
-          </MDBCol>
-        </MDBRow>
-      </MDBContainer>
-      <div className="footer-copyright text-center py-3">
-        <MDBContainer fluid>
-          &copy; {new Date().getFullYear()} Copyright:{" "}
-          <a href="https://www.olx.com.pk"> OLX </a>
-        </MDBContainer>
-      </div>
-    </MDBFooter>
-  );
-};
-
-export default FooterPage;
+function Footer(){
+    return(
+        <React.Fragment>
+        <div className="footer flex">
+            <div className="block flex flex-col">
+                <h2 className="title s16 fontb color">Popular Categories</h2>
+                <Link to='/' className="noul noulh font s14 color">Cars</Link>
+                <Link to='/' className="noul noulh font s14 color">Flat for Rent</Link>
+                <Link to='/' className="noul noulh font s14 color">Jobs</Link>
+                <Link to='/' className="noul noulh font s14 color">Mobile Phones</Link>
+            </div>
+            <div className="block flex flex-col">
+                <h2 className="title s16 fontb color">Trending Searches</h2>
+                <Link to='/' className="noul noulh font s14 color">Cars</Link>
+                <Link to='/' className="noul noulh font s14 color">Flat for Rent</Link>
+                <Link to='/' className="noul noulh font s14 color">Jobs</Link>
+                <Link to='/' className="noul noulh font s14 color">Mobile Phones</Link>
+            </div>
+            <div className="block flex flex-col">
+                <h2 className="title s16 fontb color">About Us</h2>
+                <Link to='/' className="noul noulh font s14 color">Cars</Link>
+                <Link to='/' className="noul noulh font s14 color">Flat for Rent</Link>
+                <Link to='/' className="noul noulh font s14 color">Jobs</Link>
+                <Link to='/' className="noul noulh font s14 color">Mobile Phones</Link>
+            </div>
+            <div className="block flex flex-col">
+                <h2 className="title s16 fontb color">OLX</h2>
+                <Link to='/' className="noul noulh font s14 color">Cars</Link>
+                <Link to='/' className="noul noulh font s14 color">Flat for Rent</Link>
+                <Link to='/' className="noul noulh font s14 color">Jobs</Link>
+                <Link to='/' className="noul noulh font s14 color">Mobile Phones</Link>
+            </div>
+        </div>
+        <div className="footerb flex">
+            <h2 className="cfff font s14">Other Countries India - South Africa - Indonesia</h2>
+            <h2 className="r cfff font s14">Free Classifieds in Pakistan. @ 2006-2020 OLX</h2>
+        </div>
+        </React.Fragment>
+    )
+}
+export default Footer;
